@@ -1,0 +1,23 @@
+Faixa Salarial vaga de Kotlin (Regime CLT): 
+- Dev Junior: R$3.500 - R$6.500;
+- Dev Pleno: R$6.500 - R$12.000;
+- Dev Sênior: R$12.000 - R$22.000.
+
+Vagas encontradas: 480 encontradas (linkedin), muitas vagas espalhadas Brasil afora, busca maior por Pleno e Sênior.
+
+Paradigmas:
+1- Programação Orientada a Objetos (POO):
+- Baseada em classes e objetos;
+- Suporta herança, encapsulamento, polimorfismo e abstração.
+
+2- Programação Funcional:
+- Funções são tratadas como valores (podem ser passadas como parâmetros e retornadas por outras funções);
+- Suporta funções lambda, funções de ordem superior, imutabilidade (val) e operações funcionais como map, filter e reduce.
+
+3- Programação Imperativa:
+- O programa é escrito como uma sequência de comandos que alteram o estado da aplicação;
+- Utiliza estruturas de controle como if, when, for e while.
+
+4- Programação Declarativa (em alguns contextos):
+- O desenvolvedor descreve o que deseja fazer, e não exatamente como fazer.
+- É bastante utilizada com bibliotecas e frameworks, como o Jetpack Compose, em que a interface é descrita de forma declarativa.
