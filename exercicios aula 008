@@ -1,0 +1,94 @@
+Código 1 - Python
+def adicionar(item, lista=[]):
+
+    lista.append(item)
+    return lista
+
+print(adicionar(1))
+print(adicionar(2))
+
+saída: [1]
+       [1, 2]
+
+Conceito da aula: Parâmetros com valor padrão e passagem por atriubição
+
+Código 2 - Java
+import java.util.*;
+
+public class Main {
+  static void zera(int[] v, int n) {
+    v[0] = 0;
+    n = 0;
+}
+
+  public static void main(String[] args) {
+    
+    int[] v = {5, 5}; int n = 5;
+    zera(v, n);
+    System.out.println(v[0] + " " + n);
+    
+    }
+}
+
+saída: 0 5
+conceito da aula: passagem de parâmetro por valor
+
+Código 3 - Python
+
+fs = [lambda: i for i in range(3)]
+
+print([f() for f in fs])
+
+saída: [2, 2, 2]
+conceito da aula: Fechamentos (closures)
+
+Código 4 - C
+
+#include <stdio.h>
+
+    int contador(void) {
+        static int n = 0;
+        return ++n;
+    }    
+    int main(){
+        contador(); contador();
+        printf("%d\n", contador()); 
+    }
+
+saída: 3
+conceito da aula: varíavel local estática
+
+Código 5 - Rust
+
+fn dobra(v: &Vec<i32>) -> Vec<i32> {
+    v.iter().map(|x| x * 2).collect()
+}
+
+fn main(){
+    let v = vec![1, 2, 3];
+    let d = dobra(&v);
+    println!("{:?} {:?}", v, d);
+}
+
+saída: [1, 2, 3] [2, 4, 6]
+conceito da aula: modo de passagem por posse (move)
+
+Código 6 - Python
+
+total = 0
+
+def adiciona(x):
+    total = total + x
+    return total
+
+print(adiciona(5))
+
+saída: error: expected identifier, found `=`
+ --> HelloWorld.rs:1:9
+  |
+1 | total ::= 0
+  |         ^ expected identifier
+
+error: aborting due to 1 previous error
+
+conceito da aula: ambiente de refereciamento local e o escopo
