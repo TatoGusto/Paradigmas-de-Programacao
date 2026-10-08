@@ -1,0 +1,122 @@
+Código 1 - Java
+
+import java.util.*;
+
+  class Animal {
+    String som() { return "..."; }
+  }
+  class Cachorro extends Animal {
+    String som() { return "au"; }
+  }
+
+
+public class Main {
+    public static void main(String[] args) {
+      Animal x = new Cachorro();
+    System.out.println(x.som());
+
+    }
+}
+
+saída: au
+decisão: compilação
+
+Código 2 - C++
+
+#include <iostream>
+using namespace std;
+struct A {
+  void f() { cout << "A"; }
+};
+struct B : A {
+  void f() { cout << "B"; }
+};
+
+
+int main() 
+{
+    B b; A *p = &b;
+    p->f();
+}
+
+saída: A
+decisão: execução
+
+Código 3 - Java
+
+import java.util.*;
+
+class A { String nome = "A";
+  String getNome() { return nome; } }
+class B extends A { String nome = "B";
+  String getNome() { return nome; } }
+
+public class Main {
+    public static void main(String[] args) {
+      A x = new B();
+      System.out.println(x.nome + " " + x.getNome());
+
+    }
+}
+
+saída: A B
+decisão: compilação
+
+Código 4 - Python
+
+class Contador:
+    total = 0
+    def __init__(self):
+        Contador.total += 1
+        self.id = Contador.total
+
+a = Contador(); b = Contador()
+print(a.id, b.id, a.total)
+
+saída: 1 2 2
+decisão: execução
+
+Código 5 - Java
+
+import java.util.*;
+
+
+class A {
+  static String quem() { return "A"; }
+}
+class B extends A {
+  static String quem() { return "B"; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      A x = new B();
+    System.out.println(x.quem());
+
+    }
+}
+
+saída: A
+decisão: execução
+
+Código 6 - Go
+
+package main
+import "fmt"
+type Animal struct{}
+func (Animal) Som() string { return "..." }
+func (a Animal) Falar() string {
+    return "faz " + a.Som()
+}
+type Cao struct{ Animal }
+func (Cao) Som() string { return "au" }
+
+func main() {
+	
+
+fmt.Println(Cao{}.Falar(), Cao{}.Som())
+
+}
+
+saída: faz ... au
+decisão: execução
